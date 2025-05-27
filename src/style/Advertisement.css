@@ -145,19 +145,7 @@
   font-weight: 500;
 }
 
-/* Ad placeholder */
-.ad-placeholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90px;
-  background-color: #f8f9fa;
-  border: 2px dashed #dee2e6;
-  border-radius: 8px;
-  color: #6c757d;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
+/* Removed ad placeholder - no longer needed since we only use Adsterra */
 
 /* Responsive styles */
 @media (max-width: 768px) {

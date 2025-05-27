@@ -831,7 +831,7 @@ const Quizzes = () => {
       <h2>Chinese Language Quiz</h2>
 
       {/* Top ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       {quizCompleted ? (
         <div className="quiz-box quiz-completed">
@@ -943,7 +943,7 @@ const Quizzes = () => {
         </div>
         <div className="quiz-sidebar">
           {/* Sidebar ad */}
-          <Advertisement type="sidebar" count={1} />
+          <Advertisement />
         </div>
       </div>
     </div>

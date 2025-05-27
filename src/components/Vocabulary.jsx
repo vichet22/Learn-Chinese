@@ -1377,7 +1377,7 @@ const Vocabulary = () => {
       )}
 
       {/* Top ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       <div className="vocabulary-controls">
         <div className="mode-toggle">
@@ -1705,7 +1705,7 @@ const Vocabulary = () => {
       )}
 
       {/* Bottom ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
     </div>
   );
 };

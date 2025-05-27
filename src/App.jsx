@@ -44,7 +44,7 @@ const Home = () => {
       </p>
 
       {/* Top Adsterra banner ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       <div className="featured-videos">
         <h2>Featured Videos</h2>
@@ -115,7 +115,7 @@ const Home = () => {
       </div>
 
       {/* Bottom Adsterra banner ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       <div className="home-cta">
         <h3>Ready to learn more?</h3>

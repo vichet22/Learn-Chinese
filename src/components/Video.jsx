@@ -212,7 +212,7 @@ const Video = () => {
       </p>
 
       {/* Top ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       <div className="video-grid">
         {videos.map((video, index) => (
@@ -256,7 +256,7 @@ const Video = () => {
       </div>
 
       {/* Bottom ad */}
-      <Advertisement type="adsterra" />
+      <Advertisement />
 
       <div className="content-with-sidebar">
         <div className="main-content">
@@ -270,7 +270,7 @@ const Video = () => {
         </div>
         <div className="sidebar">
           {/* Sidebar ad */}
-          <Advertisement type="sidebar" count={1} />
+          <Advertisement />
         </div>
       </div>
     </div>
