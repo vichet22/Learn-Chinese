@@ -43,8 +43,8 @@ const Home = () => {
         start your language journey.
       </p>
 
-      {/* Top banner ad */}
-      <Advertisement type="banner" count={1} />
+      {/* Top Adsterra banner ad */}
+      <Advertisement type="adsterra" />
 
       <div className="featured-videos">
         <h2>Featured Videos</h2>
@@ -114,8 +114,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Bottom banner ad */}
-      <Advertisement type="banner" count={2} />
+      {/* Bottom Adsterra banner ad */}
+      <Advertisement type="adsterra" />
 
       <div className="home-cta">
         <h3>Ready to learn more?</h3>
