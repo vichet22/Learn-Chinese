@@ -14,18 +14,17 @@ const AdsterraBanner = ({ className = "" }) => {
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.async = true;
-    script.src =
-      "//www.highperformanceformat.com/20f0d91981b55e2489b2faf3bba88917/invoke.js";
+    script.src = "//www.highperformanceformat.com/f34e6130d1c93083f39a43e77c9fa5e8/invoke.js";
 
     // Create the configuration script
     const configScript = document.createElement("script");
     configScript.type = "text/javascript";
     configScript.innerHTML = `
       atOptions = {
-        'key' : '20f0d91981b55e2489b2faf3bba88917',
+        'key' : 'f34e6130d1c93083f39a43e77c9fa5e8',
         'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
+        'height' : 250,
+        'width' : 300,
         'params' : {}
       };
     `;
