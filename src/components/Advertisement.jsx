@@ -8,6 +8,7 @@ import "../style/Advertisement.css"; // Import the CSS file
  * @param {string} props.className - Additional CSS class for styling (optional)
  */
 const AdsterraBanner = ({ className = "" }) => {
+  console.log("AdsterraBanner rendering");
   useEffect(() => {
     // Create and append the Adsterra script
     const script = document.createElement("script");
