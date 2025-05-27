@@ -52,6 +52,33 @@ const AdsterraBanner = () => {
 };
 
 // Sample ad data - in a real app, this would come from an ad service
+// Updated: Fixed sampleAds reference issue
+const sampleAds = [
+  {
+    id: 1,
+    title: "Learn Chinese Online",
+    description: "Master Chinese with our comprehensive courses",
+    imageUrl: "https://placehold.co/300x200/e6f7ff/1890ff?text=Chinese+Course",
+    link: "#",
+    type: "banner",
+  },
+  {
+    id: 2,
+    title: "Chinese Dictionary",
+    description: "Comprehensive Chinese-English dictionary",
+    imageUrl: "https://placehold.co/300x200/f6ffed/52c41a?text=Dictionary",
+    link: "#",
+    type: "sidebar",
+  },
+  {
+    id: 3,
+    title: "Chinese Culture",
+    description: "Explore the rich Chinese culture and traditions",
+    imageUrl: "https://placehold.co/300x200/fff2e8/fa541c?text=Culture",
+    link: "#",
+    type: "banner",
+  },
+];
 
 /**
  * Advertisement component that displays ads
@@ -73,6 +100,12 @@ const Advertisement = ({
   }
   // Filter ads by type or get random ads if type is 'random'
   const getAds = () => {
+    // Ensure sampleAds is defined and is an array
+    if (!sampleAds || !Array.isArray(sampleAds)) {
+      console.warn("sampleAds is not defined or not an array");
+      return [];
+    }
+
     let filteredAds = sampleAds;
 
     if (type !== "random") {
@@ -84,6 +117,17 @@ const Advertisement = ({
   };
 
   const adsToShow = getAds();
+
+  // If no ads to show, return null or a placeholder
+  if (!adsToShow || adsToShow.length === 0) {
+    return (
+      <div className={`ad-container ${type}-ad ${className}`}>
+        <div className="ad-placeholder">
+          <p>Advertisement space</p>
+        </div>
+      </div>
+    );
+  }
 
   // Determine size class
   const sizeClass = size === "728x90" ? "size-728x90" : "";

@@ -61,61 +61,66 @@ const defaultVideos = [
   },
 
   {
-    title: "HSK2 Vocabulary Flashcards – Adverb, Adjective & Function Words with Sample Sentences",
+    title:
+      "HSK2 Vocabulary Flashcards – Adverb, Adjective & Function Words with Sample Sentences",
     url: "https://ok.ru/videoembed/9384922253984",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK2 Vocabulary Flashcards – Nouns with Sample Sentences (Part I)",
     url: "https://ok.ru/videoembed/9384922319520",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK1 Vocabulary Flashcards – Verbs with Sample Sentences",
     url: "https://ok.ru/videoembed/9384922122912",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "HSK1 Vocabulary Flashcards – Adverb, Adjective & Function Words with Sample Sentences",
+  {
+    title:
+      "HSK1 Vocabulary Flashcards – Adverb, Adjective & Function Words with Sample Sentences",
     url: "https://ok.ru/videoembed/9384922188448",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "HSK1 Vocabulary Flashcards – Numeral & Measure Words with Sample Sentences",
+  {
+    title:
+      "HSK1 Vocabulary Flashcards – Numeral & Measure Words with Sample Sentences",
     url: "https://ok.ru/videoembed/9384921991840",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK1 Vocabulary Flashcards - Pronouns with Sample Sentences",
     url: "https://ok.ru/videoembed/9384922057376",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK1 Vocabulary Flashcards – Nouns with Sample Sentences (Part II)",
     url: "https://ok.ru/videoembed/9384921926304",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK1 Vocabulary Flashcards – Nouns with Sample Sentences (Part I)",
     url: "https://ok.ru/videoembed/9384921795232",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "50 Essential Verbs You Must Know in Chinese   Basic Chinese Vocabularies   Level 1",
+  {
+    title:
+      "50 Essential Verbs You Must Know in Chinese   Basic Chinese Vocabularies   Level 1",
     url: "https://ok.ru/videoembed/9384921664160",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "50 Essential Noun Characters You Must Know in Chinese   Basic Chinese Vocabularies   Level 1",
+  {
+    title:
+      "50 Essential Noun Characters You Must Know in Chinese   Basic Chinese Vocabularies   Level 1",
     url: "https://ok.ru/videoembed/9384921598624",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
@@ -126,56 +131,60 @@ const defaultVideos = [
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK2 Vocabulary Flashcards - Pronouns with Sample Sentences",
     url: "https://ok.ru/videoembed/9385503754912",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 3 Pay Bill",
+  {
+    title:
+      "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 3 Pay Bill",
     url: "https://ok.ru/videoembed/9385503689376",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 4 Four Seasons",
+  {
+    title:
+      "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 4 Four Seasons",
     url: "https://ok.ru/videoembed/9385503623840",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 1 New Classmate",
+  {
+    title:
+      "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 1 New Classmate",
     url: "https://ok.ru/videoembed/9385503558304",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK2 Vocabulary Flashcards – Nouns with Sample Sentences (Part II)",
     url: "https://ok.ru/videoembed/9385503492768",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 2 Order Dishes",
+  {
+    title:
+      "Learning Chinese Grammar and Vocabulary with Bobo Conversation Series - Episode 2 Order Dishes",
     url: "https://ok.ru/videoembed/9385503361696",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
+  {
     title: "HSK2 Vocabulary Flashcards – Verbs with Sample Sentences",
     url: "https://ok.ru/videoembed/9385503296160",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-{
-    title: "HSK2 Vocabulary Flashcards – Numeral & Measure Words with Sample Sentences",
+  {
+    title:
+      "HSK2 Vocabulary Flashcards – Numeral & Measure Words with Sample Sentences",
     url: "https://ok.ru/videoembed/9385503230624",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
   },
 
-
-{
+  {
     title: "Master Number Reading in Chinese in 10 Minutes",
     url: "https://ok.ru/videoembed/9385503099552",
     thumbnail: "https://placehold.co/320x180/f6ffed/52c41a?text=Interjections",
@@ -203,7 +212,7 @@ const Video = () => {
       </p>
 
       {/* Top ad */}
-      <Advertisement type="banner" count={1} />
+      <Advertisement type="adsterra" />
 
       <div className="video-grid">
         {videos.map((video, index) => (
@@ -247,7 +256,7 @@ const Video = () => {
       </div>
 
       {/* Bottom ad */}
-      <Advertisement type="banner" count={1} />
+      <Advertisement type="adsterra" />
 
       <div className="content-with-sidebar">
         <div className="main-content">
