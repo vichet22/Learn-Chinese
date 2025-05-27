@@ -29,6 +29,14 @@ const Navigation = () => {
         <ul className={`nav-list ${isMenuOpen ? "active" : ""}`}>
           <li>
             <NavLink
+              to="/vocabulary"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Vocabulary
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/quizzes"
               className={({ isActive }) => (isActive ? "active" : "")}
             >

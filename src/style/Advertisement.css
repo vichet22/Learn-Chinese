@@ -49,6 +49,54 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Banner size 728x90 styles */
+.size-728x90 {
+  width: 728px;
+  height: 90px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.size-728x90 .ad-item {
+  width: 728px;
+  height: 90px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.size-728x90 .ad-image {
+  width: auto;
+  height: 90px;
+  max-width: 180px;
+  object-fit: cover;
+  border-radius: 6px 0 0 6px;
+}
+
+.size-728x90 .ad-content {
+  flex: 1;
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+.size-728x90 .ad-title {
+  font-size: 1rem;
+  margin: 0 0 0.3rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.size-728x90 .ad-description {
+  font-size: 0.8rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Ad item styles */
 .ad-item {
   position: relative;
@@ -102,17 +150,44 @@
   .sidebar-ad {
     max-width: 100%;
   }
-  
+
   .ad-container {
     margin: 1rem 0;
   }
-  
+
   .ad-title {
     font-size: 1rem;
   }
-  
+
   .ad-description {
     font-size: 0.8rem;
+  }
+
+  .size-728x90 {
+    width: 100%;
+    max-width: 728px;
+    height: auto;
+    min-height: 90px;
+  }
+
+  .size-728x90 .ad-item {
+    width: 100%;
+    max-width: 728px;
+    height: auto;
+    min-height: 90px;
+    flex-wrap: wrap;
+  }
+
+  .size-728x90 .ad-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .size-728x90 .ad-content {
+    width: 100%;
   }
 }
 
@@ -122,7 +197,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .banner-ad .ad-item {
     flex: 1 1 300px;
     max-width: calc(50% - 0.5rem);
