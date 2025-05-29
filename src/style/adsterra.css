@@ -1,0 +1,180 @@
+/* Adsterra Banner Ads Styling */
+
+/* Main container for all Adsterra banners */
+.adsterra-banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.adsterra-banner-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Standard 728x90 banner styling */
+.adsterra-banner-728x90 {
+  width: 728px;
+  height: 90px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Loading animation for empty banners */
+.adsterra-banner-728x90:empty::before {
+  content: "Advertisement Loading...";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 2s infinite;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Loading spinner component */
+.adsterra-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 14px;
+}
+
+.adsterra-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Placement-specific styling */
+.adsterra-top {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.adsterra-bottom {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.adsterra-sidebar {
+  margin: 1rem 0;
+  max-width: 300px;
+}
+
+.adsterra-sidebar .adsterra-banner-728x90 {
+  width: 100%;
+  max-width: 300px;
+  height: 250px; /* Taller for sidebar placement */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+  .adsterra-banner-container {
+    margin: 1rem auto;
+    padding: 0.5rem;
+  }
+  
+  .adsterra-banner-728x90 {
+    width: 100%;
+    max-width: 100%;
+    min-height: 90px;
+    height: auto;
+  }
+  
+  .adsterra-sidebar {
+    max-width: 100%;
+  }
+  
+  .adsterra-sidebar .adsterra-banner-728x90 {
+    max-width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adsterra-banner-container {
+    margin: 0.5rem auto;
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+  
+  .adsterra-banner-728x90 {
+    min-height: 80px;
+  }
+  
+  .adsterra-banner-728x90:empty::before {
+    font-size: 12px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .adsterra-banner-container {
+    border: 2px solid #000;
+    background-color: #fff;
+  }
+  
+  .adsterra-banner-728x90:empty::before {
+    background: #f0f0f0;
+    color: #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .adsterra-banner-container {
+    transition: none;
+  }
+  
+  .adsterra-banner-container:hover {
+    transform: none;
+  }
+  
+  .adsterra-banner-728x90:empty::before {
+    animation: none;
+    background: #f0f0f0;
+  }
+  
+  .adsterra-spinner {
+    animation: none;
+  }
+}

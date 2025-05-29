@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/Quizzes.css";
-import Advertisement from "./Advertisement";
+import Adsterra from "./adsterra";
 
 const quizData = [
   // Original questions
@@ -831,7 +831,7 @@ const Quizzes = () => {
       <h2>Chinese Language Quiz</h2>
 
       {/* Top ad */}
-      <Advertisement />
+      <Adsterra />
 
       {quizCompleted ? (
         <div className="quiz-box quiz-completed">
@@ -943,7 +943,7 @@ const Quizzes = () => {
         </div>
         <div className="quiz-sidebar">
           {/* Sidebar ad */}
-          <Advertisement />
+          <Adsterra placement="sidebar" showSpinner={true} />
         </div>
       </div>
     </div>

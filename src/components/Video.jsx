@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/Video.css";
-import Advertisement from "./Advertisement";
+import Adsterra from "./adsterra";
 
 // Video data with titles, URLs, and thumbnails
 const defaultVideos = [
@@ -212,7 +212,7 @@ const Video = () => {
       </p>
 
       {/* Top ad */}
-      <Advertisement />
+      <Adsterra />
 
       <div className="video-grid">
         {videos.map((video, index) => (
@@ -256,7 +256,7 @@ const Video = () => {
       </div>
 
       {/* Bottom ad */}
-      <Advertisement />
+      <Adsterra />
 
       <div className="content-with-sidebar">
         <div className="main-content">
@@ -270,7 +270,7 @@ const Video = () => {
         </div>
         <div className="sidebar">
           {/* Sidebar ad */}
-          <Advertisement />
+          <Adsterra placement="sidebar" />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import "../style/Vocabulary.css";
-import Advertisement from "./Advertisement";
+import Adsterra from "./adsterra";
 import core1000WordList from "../data/core1000WordList";
 
 // Vocabulary data
@@ -1377,7 +1377,7 @@ const Vocabulary = () => {
       )}
 
       {/* Top ad */}
-      <Advertisement />
+      <Adsterra />
 
       <div className="vocabulary-controls">
         <div className="mode-toggle">
@@ -1705,7 +1705,7 @@ const Vocabulary = () => {
       )}
 
       {/* Bottom ad */}
-      <Advertisement />
+      <Adsterra />
     </div>
   );
 };

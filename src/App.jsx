@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 import Quizzes from "./components/Quizzes";
 import Video from "./components/Video";
 import Vocabulary from "./components/Vocabulary";
-import Advertisement from "./components/Advertisement";
+import Adsterra from "./components/adsterra";
 
 // Featured videos for the home page
 const featuredVideos = [
@@ -44,7 +44,10 @@ const Home = () => {
       </p>
 
       {/* Top Adsterra banner ad */}
-      <Advertisement />
+      
+      <Adsterra placement="bottom" />
+      
+
 
       <div className="featured-videos">
         <h2>Featured Videos</h2>
@@ -115,7 +118,7 @@ const Home = () => {
       </div>
 
       {/* Bottom Adsterra banner ad */}
-      <Advertisement />
+      <Adsterra placement="bottom" showSpinner={true} />
 
       <div className="home-cta">
         <h3>Ready to learn more?</h3>
