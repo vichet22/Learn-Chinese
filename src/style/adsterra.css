@@ -80,8 +80,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Placement-specific styling */
@@ -106,43 +110,105 @@
   height: 250px; /* Taller for sidebar placement */
 }
 
+/* Native banner container styling */
+.adsterra-native-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 200px; /* Minimum height for native ads */
+}
+
+.adsterra-native-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Native banner content container */
+#container-48aca291f9eaaaded0f034c3f7d81d5e {
+  width: 100%;
+  min-height: 150px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Loading state for native banner */
+#container-48aca291f9eaaaded0f034c3f7d81d5e:empty::before {
+  content: "Native Advertisement Loading...";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 2s infinite;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
-  .adsterra-banner-container {
+  .adsterra-banner-container,
+  .adsterra-native-container {
     margin: 1rem auto;
     padding: 0.5rem;
   }
-  
+
   .adsterra-banner-728x90 {
     width: 100%;
     max-width: 100%;
     min-height: 90px;
     height: auto;
   }
-  
+
   .adsterra-sidebar {
     max-width: 100%;
   }
-  
+
   .adsterra-sidebar .adsterra-banner-728x90 {
     max-width: 100%;
     height: 200px;
   }
+
+  #container-48aca291f9eaaaded0f034c3f7d81d5e {
+    min-height: 120px;
+  }
 }
 
 @media (max-width: 480px) {
-  .adsterra-banner-container {
+  .adsterra-banner-container,
+  .adsterra-native-container {
     margin: 0.5rem auto;
     padding: 0.25rem;
     border-radius: 4px;
   }
-  
+
   .adsterra-banner-728x90 {
     min-height: 80px;
   }
-  
-  .adsterra-banner-728x90:empty::before {
+
+  .adsterra-banner-728x90:empty::before,
+  #container-48aca291f9eaaaded0f034c3f7d81d5e:empty::before {
     font-size: 12px;
+  }
+
+  #container-48aca291f9eaaaded0f034c3f7d81d5e {
+    min-height: 100px;
   }
 }
 
@@ -152,7 +218,7 @@
     border: 2px solid #000;
     background-color: #fff;
   }
-  
+
   .adsterra-banner-728x90:empty::before {
     background: #f0f0f0;
     color: #000;
@@ -164,16 +230,16 @@
   .adsterra-banner-container {
     transition: none;
   }
-  
+
   .adsterra-banner-container:hover {
     transform: none;
   }
-  
+
   .adsterra-banner-728x90:empty::before {
     animation: none;
     background: #f0f0f0;
   }
-  
+
   .adsterra-spinner {
     animation: none;
   }
