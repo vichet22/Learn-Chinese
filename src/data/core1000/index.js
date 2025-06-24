@@ -16,6 +16,7 @@ import emotionsWords from "./emotions";
 import timeWeatherWords from "./timeWeather";
 import colorsShapesWords from "./colorsShapes";
 import bodyHealthWords from "./bodyHealth";
+import animalWords from "./animals";
 
 // Combine all word categories
 const core1000WordList = [
@@ -36,6 +37,7 @@ const core1000WordList = [
   ...timeWeatherWords,
   ...colorsShapesWords,
   ...bodyHealthWords,
+  ...animalWords,
 ];
 
 export default core1000WordList;
